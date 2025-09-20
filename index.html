@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Void - Your Satisfaction is Irrelevant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="side-menu" class="side-menu-panel">
+        <div class="side-menu-header">
+            <h3>Browse by Vice</h3>
+            <i id="close-menu-btn" class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+            <li><a href="#">Envy (Electronics)</a></li>
+            <li><a href="#">Gluttony (Groceries)</a></li>
+            <li><a href="#">Greed (Deals & Steals)</a></li>
+            <li><a href="#">Lust (Apparel &... Other Things)</a></li>
+            <li><a href="#">Pride (Home & Decor)</a></li>
+            <li><a href="#">Sloth (Convenience Items)</a></li>
+            <li><a href="#">Wrath (Customer Service Complaints)</a></li>
+        </ul>
+    </div>
+
+    <aside class="sidebar">
+        <div class="brand-logo" title="There is no escape from The Void.">
+            <h1>The Void</h1>
+            <p>Satisfaction is Irrelevant</p>
+        </div>
+
+        <div class="nav-search">
+            <input placeholder="Search for meaning..." class="search-input" title="You know you won't find it here. But you'll look anyway.">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-link" title="Sign in to your personalized Skinner box.">
+                <i class="fa-solid fa-user"></i>
+                <span>Account & Addictions</span>
+            </a>
+            <a href="#" class="nav-link" title="Look upon your past purchases and despair.">
+                <i class="fa-solid fa-box-archive"></i>
+                <span>Regrets & Orders</span>
+            </a>
+            <a href="#" class="nav-link" title="Your basket of fleeting desires.">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content-wrapper">
+        <header>
+            <div class="panel">
+                <div id="open-menu-btn" class="panel-all border" title="Click to reveal your deepest, most marketable desires.">
+                    <i class="fa-solid fa-bars"></i>
+                    All Categories
+                </div>
+                <div class="panel-ops">
+                    <p class="border">Today's Fleeting Deals</p>
+                    <p class="border">Gift Cards</p>
+                    <p class="border">Sell Your Soul</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-section">
+                <div class="hero-msg">
+                    <p>You are a visitor in The Void. Your compliance is appreciated. <a href="#" title="This link, like free will, is an illusion.">Learn more.</a></p>
+                </div>
+            </div>
+
+            <div class="shop-section">
+                <article class="box" title="Cover your mortal shell with fabrics designed to lose their shape after three washes.">
+                    <div class="box-content">
+                        <h2>Compulsive Clothing</h2>
+                        <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                        <p><a>Shop the look</a></p>
+                    </div>
+                </article>
+                <article class="box" title="Lotions and potions to temporarily mask the slow, inevitable decay of the human body.">
+                    <div class="box-content">
+                        <h2>Health & Personal Fear</h2>
+                        <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                        <p><a>Peruse the pharmacy</a></p>
+                    </div>
+                </article>
+                <article class="box" title="Assemble-it-yourself furniture that will test the limits of your patience and relationships.">
+                    <div class="box-content">
+                        <h2>Future Landfill</h2>
+                        <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                        <p><a>Explore the collection</a></p>
+                    </div>
+                </article>
+                <article class="box" title="The latest glowing rectangles to distract you from the crushing silence. Batteries not included.">
+                    <div class="box-content">
+                        <h2>Digital Pacifiers</h2>
+                        <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                        <p><a>Upgrade your distraction</a></p>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a href="#">Terms of Surrender</a>
+                    <a href="#">Privacy Notice (A Formality)</a>
+                    <a href="#">Your Ads, Your Prison</a>
+                </div>
+                <div class="copyright">
+                    © 2025, The Void LLC. We own your data, and by extension, you.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const openMenuButton = document.getElementById('open-menu-btn');
+        const closeMenuButton = document.getElementById('close-menu-btn');
+        const sideMenu = document.getElementById('side-menu');
+
+        openMenuButton.addEventListener('click', () => {
+            sideMenu.classList.add('visible');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            sideMenu.classList.remove('visible');
+        });
+    </script>
+
+</body>
+</html>
